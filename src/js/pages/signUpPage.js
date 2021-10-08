@@ -5,19 +5,19 @@ import link from "./../components/ui/link";
 const homePage = function () {
   const header = document.createElement("header");
 
-  const h1 = levelHeading("h1", "Home Page");
+  const h1 = levelHeading("h1", "Sign Up Page");
 
-  const login = link("login page", "/login");
+  const login = link("home page", "/");
 
-  const signUp = link("sign up", "/signup");
+  const signUp = link("login page", "/login");
 
   header.append(h1);
 
-  header.append(login);
+  header.append(home);
 
-  header.append(signUp);
+  header.append(login);
 
   return header;
 };
 
-export default homePage;
+export default signUpPage;

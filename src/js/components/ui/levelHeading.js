@@ -1,10 +1,15 @@
-import makeElement from "../../utils/makeElement"
+import makeElement from "../../utils/makeElement";
 
-const heading = function (elementType='h2', label="ui heading", className="ui-heading"){
-     const template = `<${elementType} class="${className}"> ${label} </ ${elementType}>`
-     const element = makeElement(template)
+const levelHeading = function (
+  elementType = "h2",
+  label = "ui heading",
+  className = "ui-heading"
+) {
+  const template = `<${elementType} class="${className}"> ${label} </ ${elementType}>`;
 
-     return element
-}
+  const element = makeElement(template);
 
-export default heading
+  return element;
+};
+
+export default levelHeading;
